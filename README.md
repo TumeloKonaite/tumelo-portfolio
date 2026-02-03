@@ -1,9 +1,9 @@
-# Tshana Tumelo Konaite — Portfolio
+# Tshana Tumelo Konaite  Portfolio
 
 A modern, recruiter-ready portfolio showcasing my background in mathematics, data and analytics experience, and applied machine learning work. Built with a clean, responsive UI and focused on clarity, outcomes, and visual storytelling.
 
 ## Live Site
-(add your live URL)
+https://tumelokonaite.github.io/tumelo-portfolio/
 
 ## Highlights
 - Data & analytics focus with clear role positioning
@@ -35,7 +35,7 @@ Then open `http://localhost:8000` in your browser.
 
 ## Contact
 - Email: tumelokonaite@gmail.com
-- LinkedIn: Available upon request
+- LinkedIn: https://www.linkedin.com/in/tumelo-tshana-konaite-049054152/
 
 ---
-If you are a recruiter or hiring manager, feel free to reach out. I’m open to data science, ML engineering, and quantitative analytics opportunities.
+If you are a recruiter or hiring manager, feel free to reach out. Im open to data science, ML engineering, and quantitative analytics opportunities.
