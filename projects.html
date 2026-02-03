@@ -56,24 +56,24 @@
 
   <section class="container highlights" data-stagger-group="highlights">
     <div class="highlight-card reveal-item card-reveal">
-      <div class="highlight-icon"><i class="fa-solid fa-layer-group"></i></div>
+      <div class="highlight-icon"><i class="fa-solid fa-rocket"></i></div>
       <div>
-        <h3>End-to-End Delivery</h3>
-        <p>From data ingestion to deployment, with clear documentation and handoff.</p>
+        <h3>Production Deployment</h3>
+        <p>Shipped end-to-end ML apps with containerization and cloud-ready runtime patterns.</p>
       </div>
     </div>
     <div class="highlight-card reveal-item card-reveal">
-      <div class="highlight-icon"><i class="fa-solid fa-diagram-project"></i></div>
+      <div class="highlight-icon"><i class="fa-solid fa-code-branch"></i></div>
       <div>
-        <h3>Business-First Modeling</h3>
-        <p>Practical models aligned to real operational decisions and constraints.</p>
+        <h3>MLOps & CI</h3>
+        <p>Automated testing, reproducible training pipelines, and stable model artifact workflows.</p>
       </div>
     </div>
     <div class="highlight-card reveal-item card-reveal">
-      <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="highlight-icon"><i class="fa-solid fa-robot"></i></div>
       <div>
-        <h3>Quality & Explainability</h3>
-        <p>Transparent outputs, evaluation reports, and stakeholder-friendly artifacts.</p>
+        <h3>Applied GenAI</h3>
+        <p>Built retrieval-augmented systems for grounded question answering in regulated domains.</p>
       </div>
     </div>
   </section>
@@ -81,31 +81,31 @@
   <section class="container" id="case-studies">
     <div class="section-header">
       <h2 class="reveal"><i class="fas fa-flask"></i> Impact Case Studies</h2>
-      <p class="section-intro reveal">Two deep dives showcasing problem framing, pipeline design, and delivery-ready outputs.</p>
+      <p class="section-intro reveal">Three representative builds focused on predictive modeling, pricing analytics, and GenAI retrieval systems.</p>
     </div>
 
     <div class="case-editorial" data-stagger-group="case-studies">
       <article class="editorial-case reveal-item card-reveal">
         <div class="editorial-main">
-          <p class="editorial-kicker">Forecasting</p>
-          <h3>Inventory Demand Forecasting</h3>
-          <p class="editorial-summary">Retail demand forecasting to improve replenishment accuracy and planning speed.</p>
+          <p class="editorial-kicker">Retention Analytics</p>
+          <h3>Customer Churn Prediction Web App</h3>
+          <p class="editorial-summary">Flask-based churn prediction app with decision recommendations and ROI-style retention guidance.</p>
           <div class="editorial-body">
             <div>
               <h4>Problem</h4>
-              <p>Daily demand forecasts by store and SKU to reduce stockouts and overstock.</p>
+              <p>Identify high-risk customers early enough to trigger targeted retention action.</p>
             </div>
             <div>
               <h4>Approach</h4>
-              <p>Time-series pipeline with calendar, promotions, and weather features. MLflow tracking and model selection on rolling validation.</p>
+              <p>scikit-learn pipeline with model metadata tracking, probability thresholds, and deterministic action decisioning.</p>
             </div>
             <div>
               <h4>Delivery</h4>
-              <p>FastAPI endpoints with a Streamlit UI, plus evaluation reports by region and category.</p>
+              <p>Deployed web app, API endpoints, Docker support, and CI test workflow.</p>
             </div>
           </div>
           <div class="case-tags">
-            <span>Python</span><span>pandas</span><span>scikit-learn</span><span>FastAPI</span><span>Streamlit</span><span>MLflow</span>
+            <span>Python</span><span>Flask</span><span>scikit-learn</span><span>Docker</span><span>CI</span>
           </div>
         </div>
         <aside class="editorial-aside">
@@ -114,19 +114,89 @@
             <div class="facts-grid">
               <div>
                 <span>Focus</span>
-                <strong>Demand</strong>
+                <strong>Churn</strong>
+              </div>
+              <div>
+                <span>Output</span>
+                <strong>Web App + API</strong>
+              </div>
+              <div>
+                <span>Validation</span>
+                <strong>ROC-AUC</strong>
+              </div>
+              <div>
+                <span>Delivery</span>
+                <strong>Docker + CI</strong>
+              </div>
+            </div>
+          </div>
+          <div class="aside-visual">
+            <div class="visual-kicker">Delivery Snapshot</div>
+            <div class="ring-row">
+              <div class="ring ring-blue">
+                <span>Data</span>
+              </div>
+              <div class="ring ring-slate">
+                <span>Model</span>
+              </div>
+              <div class="ring ring-indigo">
+                <span>Deploy</span>
+              </div>
+            </div>
+            <div class="stack-bars">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="chip-row">
+              <span>Decisioning</span>
+              <span>Tracking</span>
+              <span>API</span>
+            </div>
+          </div>
+        </aside>
+      </article>
+
+      <article class="editorial-case reveal-item card-reveal">
+        <div class="editorial-main">
+          <p class="editorial-kicker">Regression Analytics</p>
+          <h3>Medical Insurance Cost Prediction</h3>
+          <p class="editorial-summary">FastAPI app for insurance charge estimation with reproducible training and JSON/API usage.</p>
+          <div class="editorial-body">
+            <div>
+              <h4>Problem</h4>
+              <p>Estimate expected medical insurance charges from customer attributes.</p>
+            </div>
+            <div>
+              <h4>Approach</h4>
+              <p>Regression pipeline with ingestion, transformation, model training, and model-card style documentation.</p>
+            </div>
+            <div>
+              <h4>Delivery</h4>
+              <p>FastAPI UI + JSON endpoint, Docker packaging, and CI checks.</p>
+            </div>
+          </div>
+          <div class="case-tags">
+            <span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>Docker</span><span>pytest</span>
+          </div>
+        </div>
+        <aside class="editorial-aside">
+          <div class="aside-panel">
+            <div class="aside-title">Project Facts</div>
+            <div class="facts-grid">
+              <div>
+                <span>Focus</span>
+                <strong>Pricing</strong>
               </div>
               <div>
                 <span>Output</span>
                 <strong>API + UI</strong>
               </div>
               <div>
-                <span>Tracking</span>
-                <strong>MLflow</strong>
+                <span>Validation</span>
+                <strong>R2 Score</strong>
               </div>
               <div>
-                <span>Artifacts</span>
-                <strong>Reports</strong>
+                <span>Runtime</span>
+                <strong>AWS Ready</strong>
               </div>
             </div>
           </div>
@@ -137,19 +207,19 @@
                 <span>Data</span>
               </div>
               <div class="ring ring-amber">
-                <span>Model</span>
+                <span>Train</span>
               </div>
               <div class="ring ring-violet">
-                <span>Deploy</span>
+                <span>Serve</span>
               </div>
             </div>
             <div class="stack-bars">
               <span></span><span></span><span></span><span></span>
             </div>
             <div class="chip-row">
-              <span>Automation</span>
-              <span>Monitoring</span>
-              <span>Docs</span>
+              <span>Regression</span>
+              <span>Model Card</span>
+              <span>API</span>
             </div>
           </div>
         </aside>
@@ -157,25 +227,25 @@
 
       <article class="editorial-case reveal-item card-reveal">
         <div class="editorial-main">
-          <p class="editorial-kicker">Risk Scoring</p>
-          <h3>Loan Default Prediction</h3>
-          <p class="editorial-summary">Risk scoring pipeline to support consistent underwriting decisions.</p>
+          <p class="editorial-kicker">LLM + Retrieval</p>
+          <h3>Banking RAG Assistant</h3>
+          <p class="editorial-summary">Modular Retrieval-Augmented Generation pipeline for banking documents with strict answer guardrails.</p>
           <div class="editorial-body">
             <div>
               <h4>Problem</h4>
-              <p>Predict probability of default while maintaining fair, explainable approvals.</p>
+              <p>Answer policy and product questions using only trusted internal banking documents.</p>
             </div>
             <div>
               <h4>Approach</h4>
-              <p>Modular pipeline with feature engineering, model comparison, and calibration checks.</p>
+              <p>PDF ingestion, chunking, embedding, Chroma vector store, retriever filters, and guardrailed prompting.</p>
             </div>
             <div>
               <h4>Delivery</h4>
-              <p>Risk scoring API with a demo UI and CI checks for model stability.</p>
+              <p>FastAPI endpoint + Gradio chat UI, Dockerized demo mode, readiness checks, and evaluation harness.</p>
             </div>
           </div>
           <div class="case-tags">
-            <span>Python</span><span>scikit-learn</span><span>FastAPI</span><span>Docker</span><span>GitHub Actions</span>
+            <span>Python</span><span>RAG</span><span>Chroma</span><span>FastAPI</span><span>Gradio</span>
           </div>
         </div>
         <aside class="editorial-aside">
@@ -184,19 +254,19 @@
             <div class="facts-grid">
               <div>
                 <span>Focus</span>
-                <strong>Risk</strong>
+                <strong>GenAI</strong>
               </div>
               <div>
                 <span>Output</span>
-                <strong>API</strong>
+                <strong>Assistant API</strong>
               </div>
               <div>
-                <span>Validation</span>
-                <strong>ROC-AUC</strong>
+                <span>Store</span>
+                <strong>Chroma DB</strong>
               </div>
               <div>
-                <span>Quality</span>
-                <strong>CI Checks</strong>
+                <span>Safety</span>
+                <strong>Guardrails</strong>
               </div>
             </div>
           </div>
@@ -204,22 +274,22 @@
             <div class="visual-kicker">Delivery Snapshot</div>
             <div class="ring-row">
               <div class="ring ring-blue">
-                <span>Risk</span>
+                <span>Ingest</span>
               </div>
               <div class="ring ring-slate">
-                <span>Score</span>
+                <span>Retrieve</span>
               </div>
               <div class="ring ring-indigo">
-                <span>Deploy</span>
+                <span>Answer</span>
               </div>
             </div>
             <div class="stack-bars">
               <span></span><span></span><span></span><span></span>
             </div>
             <div class="chip-row">
-              <span>Fairness</span>
-              <span>Calibration</span>
-              <span>Audit</span>
+              <span>Grounded</span>
+              <span>Filtered</span>
+              <span>Auditable</span>
             </div>
           </div>
         </aside>
@@ -231,103 +301,55 @@
     <div class="section-header">
       <p class="section-tag reveal">Portfolio</p>
       <h2 class="reveal"><i class="fas fa-folder-open"></i> Selected Projects</h2>
-      <p class="section-intro reveal">Additional projects across data science, BI, and quantitative research.</p>
+      <p class="section-intro reveal">Core repositories I currently maintain and deploy.</p>
     </div>
     <div class="project-grid" data-stagger-group="projects">
-      <div class="project-card reveal-item card-reveal" data-title="Inventory Demand Forecasting System" data-desc="End-to-end demand forecasting with feature engineering, MLflow tracking, FastAPI endpoints, and a Streamlit UI." data-stack="Python, pandas, scikit-learn, FastAPI, Streamlit, MLflow, Docker, GitHub Actions" data-link="https://github.com/TumeloKonaite/inventory_analysis">
+      <div class="project-card reveal-item card-reveal" data-title="Customer Churn Prediction Web App" data-desc="Predicts customer churn, recommends retention actions, and estimates expected net gain through a deterministic decisioning layer." data-stack="Python, Flask, scikit-learn, Docker, GitHub Actions" data-link="https://github.com/TumeloKonaite/Customer-Churning-Repo">
         <div class="project-header">
-          <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="project-icon"><i class="fa-solid fa-user-group"></i></div>
           <div>
-            <h4>Inventory Demand Forecasting System</h4>
-            <p>Forecasting pipeline with MLflow tracking and an API + UI.</p>
+            <h4>Customer Churn Prediction Web App</h4>
+            <p>Churn prediction with retention decisioning and ROI guidance.</p>
           </div>
         </div>
         <div class="project-tags">
-          <span>Forecasting</span><span>API</span><span>MLOps</span>
+          <span>Classification</span><span>Flask</span><span>MLOps</span>
         </div>
         <div class="project-actions">
           <button class="project-quick" type="button">Quick View</button>
-          <a href="https://github.com/TumeloKonaite/inventory_analysis" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a href="https://github.com/TumeloKonaite/Customer-Churning-Repo" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
-      <div class="project-card reveal-item card-reveal" data-title="Telco Churn Prediction Pipeline" data-desc="Churn prediction pipeline with reusable preprocessing, model training, and FastAPI/Streamlit deployment." data-stack="Python, scikit-learn, FastAPI, Streamlit" data-link="https://github.com/TumeloKonaite?tab=repositories">
+      <div class="project-card reveal-item card-reveal" data-title="Medical Insurance Cost Prediction" data-desc="Regression system that estimates insurance charges via FastAPI with both form and JSON prediction endpoints." data-stack="Python, FastAPI, scikit-learn, Docker, pytest" data-link="https://github.com/TumeloKonaite/Medical-Insurance-Cost">
         <div class="project-header">
-          <div class="project-icon"><i class="fa-solid fa-user-minus"></i></div>
+          <div class="project-icon"><i class="fa-solid fa-notes-medical"></i></div>
           <div>
-            <h4>Telco Churn Prediction Pipeline</h4>
-            <p>Churn pipeline with reusable preprocessing and API delivery.</p>
+            <h4>Medical Insurance Cost Prediction</h4>
+            <p>Insurance charge estimation with API-ready regression outputs.</p>
           </div>
         </div>
         <div class="project-tags">
-          <span>Churn</span><span>Classification</span><span>API</span>
+          <span>Regression</span><span>FastAPI</span><span>Deployment</span>
         </div>
         <div class="project-actions">
           <button class="project-quick" type="button">Quick View</button>
-          <a href="https://github.com/TumeloKonaite?tab=repositories" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a href="https://github.com/TumeloKonaite/Medical-Insurance-Cost" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
-      <div class="project-card reveal-item card-reveal" data-title="Loan Default Prediction System" data-desc="Risk scoring pipeline with explainability, API delivery, and CI stability checks." data-stack="Python, scikit-learn, FastAPI, Docker, GitHub Actions" data-link="https://github.com/TumeloKonaite?tab=repositories">
+      <div class="project-card reveal-item card-reveal" data-title="Banking RAG Assistant" data-desc="Retrieval-Augmented Generation pipeline for banking PDFs with guardrails, Chroma vector search, FastAPI serving, and Gradio UI." data-stack="Python, RAG, Chroma, FastAPI, Gradio, Docker" data-link="https://github.com/TumeloKonaite/Banking-chat">
         <div class="project-header">
-          <div class="project-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="project-icon"><i class="fa-solid fa-comments-dollar"></i></div>
           <div>
-            <h4>Loan Default Prediction System</h4>
-            <p>Risk scoring with explainability and CI checks.</p>
+            <h4>Banking RAG Assistant</h4>
+            <p>Grounded Q&A assistant for banking documents and policies.</p>
           </div>
         </div>
         <div class="project-tags">
-          <span>Risk</span><span>Scoring</span><span>CI</span>
+          <span>GenAI</span><span>RAG</span><span>Vector DB</span>
         </div>
         <div class="project-actions">
           <button class="project-quick" type="button">Quick View</button>
-          <a href="https://github.com/TumeloKonaite?tab=repositories" target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>
-      </div>
-      <div class="project-card reveal-item card-reveal" data-title="Power BI Sales Performance Dashboard" data-desc="Executive dashboard for sales performance, satisfaction, and inventory KPIs." data-stack="Power BI, DAX, Excel" data-link="https://github.com/TumeloKonaite/store_analysis_powerbi_dashboard">
-        <div class="project-header">
-          <div class="project-icon"><i class="fa-solid fa-chart-pie"></i></div>
-          <div>
-            <h4>Power BI Sales Performance Dashboard</h4>
-            <p>Executive KPIs for sales, satisfaction, and inventory.</p>
-          </div>
-        </div>
-        <div class="project-tags">
-          <span>Power BI</span><span>KPIs</span><span>Insights</span>
-        </div>
-        <div class="project-actions">
-          <button class="project-quick" type="button">Quick View</button>
-          <a href="https://github.com/TumeloKonaite/store_analysis_powerbi_dashboard" target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>
-      </div>
-      <div class="project-card reveal-item card-reveal" data-title="Motor Collisions SQL Analysis" data-desc="SQL analysis using CTEs and window functions to surface peak-risk patterns." data-stack="SQL, Data Analysis" data-link="https://github.com/TumeloKonaite/Motor_collisions_analysis_2025">
-        <div class="project-header">
-          <div class="project-icon"><i class="fa-solid fa-road"></i></div>
-          <div>
-            <h4>Motor Collisions SQL Analysis</h4>
-            <p>SQL analysis of peak-risk patterns.</p>
-          </div>
-        </div>
-        <div class="project-tags">
-          <span>SQL</span><span>Trends</span><span>Safety</span>
-        </div>
-        <div class="project-actions">
-          <button class="project-quick" type="button">Quick View</button>
-          <a href="https://github.com/TumeloKonaite/Motor_collisions_analysis_2025" target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>
-      </div>
-      <div class="project-card reveal-item card-reveal" data-title="Investment Portfolio Optimization" data-desc="Portfolio optimization with MPT/CAPM and risk metrics (VaR, CVaR, drawdown)." data-stack="Python, Finance, Risk Modeling" data-link="https://github.com/TumeloKonaite/Portfolio_Optimization_and_Risk_Analysis/tree/main">
-        <div class="project-header">
-          <div class="project-icon"><i class="fa-solid fa-chart-simple"></i></div>
-          <div>
-            <h4>Investment Portfolio Optimization</h4>
-            <p>Optimization with MPT/CAPM and risk metrics.</p>
-          </div>
-        </div>
-        <div class="project-tags">
-          <span>Finance</span><span>Optimization</span><span>Risk</span>
-        </div>
-        <div class="project-actions">
-          <button class="project-quick" type="button">Quick View</button>
-          <a href="https://github.com/TumeloKonaite/Portfolio_Optimization_and_Risk_Analysis/tree/main" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a href="https://github.com/TumeloKonaite/Banking-chat" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
     </div>
