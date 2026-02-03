@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tshana Tumelo Konaite | Certifications</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grid"></span>
+  </div>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-reveal-1">Certifications</h1>
+      <p class="subtitle hero-reveal-2">Professional credentials and platform expertise</p>
+      <div class="buttons hero-reveal-3">
+        <a href="skills.html" class="btn">View Skills</a>
+        <a href="index.html" class="btn">Back to About</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" id="certifications">
+    <h2 class="reveal"><i class="fas fa-certificate"></i> Credentials</h2>
+    <ul class="cert-list" data-stagger-group="certifications">
+      <li class="reveal-item card-reveal">AWS Certified AI Practitioner &ndash; Oct 2025</li>
+      <li class="reveal-item card-reveal">AWS Certified Machine Learning Engineer Associate &ndash; Jan 2026</li>
+    </ul>
+  </section>
+
+  <section class="container cta" id="cta" data-stagger-group="cta">
+    <div class="cta-card reveal-item card-reveal">
+      <div>
+        <h2>Verified expertise</h2>
+        <p>Certified across AWS AI and machine learning credentials.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Email: <a href="mailto:tumelokonaite@gmail.com">tumelokonaite@gmail.com</a> | Phone: 073 449 2485</p>
+    <p>LinkedIn: Available upon request | GitHub: <a href="https://github.com/TumeloKonaite" target="_blank" rel="noopener noreferrer">github.com/TumeloKonaite</a></p>
+    <p>&copy; 2026 Tshana Tumelo Konaite</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+  </script>
+  <script src="animations.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tshana Tumelo Konaite | Education</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="education-page">
+  <div class="ambient" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grid"></span>
+  </div>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-reveal-1">Education</h1>
+      <p class="subtitle hero-reveal-2">Academic foundation in computational and applied mathematics</p>
+      <div class="buttons hero-reveal-3">
+        <a href="skills.html" class="btn">View Skills</a>
+        <a href="index.html" class="btn">Back to About</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" id="education">
+    <div class="section-header">
+      <h2 class="reveal"><i class="fas fa-book"></i> Academic Background</h2>
+      <p class="section-intro reveal">A rigorous academic track centered on mathematics, computation, and analytical thinking.</p>
+    </div>
+
+    <div class="edu-layout" data-stagger-group="education">
+      <div class="edu-row reveal-item card-reveal">
+        <article class="edu-node edu-masters">
+          <div class="edu-dot"></div>
+          <div class="edu-node-body">
+            <p class="edu-level">Master's</p>
+            <h3><i class="fa-solid fa-crown"></i> MSc in Computational &amp; Applied Mathematics</h3>
+            <p class="edu-meta">University of the Witwatersrand &bull; 2021-2024</p>
+          </div>
+        </article>
+        <div class="edu-panels">
+          <article class="edu-panel edu-panel-masters">
+            <h4><i class="fa-solid fa-file-lines"></i> Program Focus</h4>
+            <p>Advanced coursework and research in computational and applied mathematics.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="edu-row reveal-item card-reveal">
+        <article class="edu-node edu-honours">
+          <div class="edu-dot"></div>
+          <div class="edu-node-body">
+            <p class="edu-level">Honours</p>
+            <h3><i class="fa-solid fa-medal"></i> BSc (Hons) in Mathematical Science</h3>
+            <p class="edu-meta">University of the Witwatersrand &bull; 2019</p>
+          </div>
+        </article>
+        <div class="edu-panels">
+          <article class="edu-panel edu-panel-honours">
+            <h4><i class="fa-solid fa-layer-group"></i> Honours Focus</h4>
+            <p>Mathematical science honours coursework and research.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="edu-row reveal-item card-reveal">
+        <article class="edu-node edu-undergrad">
+          <div class="edu-dot"></div>
+          <div class="edu-node-body">
+            <p class="edu-level">Undergrad</p>
+            <h3><i class="fa-solid fa-graduation-cap"></i> BSc in Computational &amp; Applied Mathematics</h3>
+            <p class="edu-meta">University of the Witwatersrand &bull; 2016-2018</p>
+          </div>
+        </article>
+        <div class="edu-panels">
+          <article class="edu-panel edu-panel-undergrad">
+            <h4><i class="fa-solid fa-compass"></i> Undergraduate Major</h4>
+            <p>Computational &amp; Applied Mathematics</p>
+          </article>
+          <article class="edu-panel edu-panel-undergrad">
+            <h4><i class="fa-solid fa-list-check"></i> Program Highlights</h4>
+            <p>Strong quantitative foundation with applied mathematics and computation.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container cta" id="cta" data-stagger-group="cta">
+    <div class="cta-card reveal-item card-reveal">
+      <div>
+        <h2>Academic foundation</h2>
+        <p>Focused on computation, modeling, and rigorous quantitative training.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Email: <a href="mailto:tumelokonaite@gmail.com">tumelokonaite@gmail.com</a> | Phone: 073 449 2485</p>
+    <p>LinkedIn: Available upon request | GitHub: <a href="https://github.com/TumeloKonaite" target="_blank" rel="noopener noreferrer">github.com/TumeloKonaite</a></p>
+    <p>&copy; 2026 Tshana Tumelo Konaite</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+  </script>
+  <script src="animations.js"></script>
+</body>
+</html>
+

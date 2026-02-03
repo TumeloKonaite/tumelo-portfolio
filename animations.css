@@ -1,0 +1,69 @@
+﻿:root {
+  --reveal-duration: 650ms;
+  --reveal-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal,
+.reveal-item,
+.hero-reveal-1,
+.hero-reveal-2,
+.hero-reveal-3 {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity var(--reveal-duration) var(--reveal-ease),
+    transform var(--reveal-duration) var(--reveal-ease),
+    filter var(--reveal-duration) var(--reveal-ease);
+  filter: blur(4px);
+}
+
+.reveal.is-visible,
+.reveal-item.is-visible,
+.hero-reveal-1.is-visible,
+.hero-reveal-2.is-visible,
+.hero-reveal-3.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+html:not(.js) .reveal,
+html:not(.js) .reveal-item,
+html:not(.js) .hero-reveal-1,
+html:not(.js) .hero-reveal-2,
+html:not(.js) .hero-reveal-3 {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: none;
+}
+
+.reveal-item.card-reveal,
+.reveal.card-reveal {
+  transform: translateY(12px) scale(0.98);
+}
+
+.reveal-item.card-reveal.is-visible,
+.reveal.card-reveal.is-visible {
+  transform: translateY(0) scale(1);
+}
+
+.reveal.will-animate,
+.reveal-item.will-animate,
+.hero-reveal-1.will-animate,
+.hero-reveal-2.will-animate,
+.hero-reveal-3.will-animate {
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-item,
+  .hero-reveal-1,
+  .hero-reveal-2,
+  .hero-reveal-3 {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}

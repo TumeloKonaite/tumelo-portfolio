@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tshana Tumelo Konaite | Skills</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grid"></span>
+  </div>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-reveal-1">Skills</h1>
+      <p class="subtitle hero-reveal-2">Tools, frameworks, and technical strengths</p>
+      <div class="buttons hero-reveal-3">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="index.html" class="btn">Back to About</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" id="skills">
+    <h2 class="reveal"><i class="fas fa-tools"></i> Capabilities & Tools</h2>
+    <div class="skills-grid" data-stagger-group="skills">
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-code"></i> Programming and Querying</h3>
+        <div class="skill-list">
+          <span>Python</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-chart-column"></i> ML and Analytics</h3>
+        <div class="skill-list">
+          <span>EDA</span><span>Feature Engineering</span><span>Supervised Learning</span><span>Model Evaluation</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-brain"></i> Frameworks and Libraries</h3>
+        <div class="skill-list">
+          <span>NumPy</span><span>Pandas</span><span>scikit-learn</span><span>TensorFlow</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-gears"></i> Cloud and MLOps</h3>
+        <div class="skill-list">
+          <span>AWS</span><span>Docker</span><span>CI/CD</span><span>GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-briefcase"></i> Data Engineering and APIs</h3>
+        <div class="skill-list">
+          <span>ETL Pipelines</span><span>RESTful APIs</span><span>FastAPI</span><span>Flask</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+        <div class="skill-list">
+          <span>MySQL</span><span>FAISS</span><span>Chroma</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-diagram-project"></i> Project Tools</h3>
+        <div class="skill-list">
+          <span>Git</span><span>GitHub</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-wand-magic-sparkles"></i> AI Tools</h3>
+        <div class="skill-list">
+          <span>AI-assisted code generation</span><span>Refactoring</span><span>Review</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-item card-reveal">
+        <h3><i class="fa-solid fa-people-group"></i> Attributes and Strengths</h3>
+        <div class="skill-list">
+          <span>Problem Solving</span><span>Proactive and Adaptable</span><span>Detail-Oriented</span><span>Continuous Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container cta" id="cta" data-stagger-group="cta">
+    <div class="cta-card reveal-item card-reveal">
+      <div>
+        <h2>Ready to contribute</h2>
+        <p>Looking for roles in data science, ML engineering, and quantitative analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Email: <a href="mailto:tumelokonaite@gmail.com">tumelokonaite@gmail.com</a> | Phone: 073 449 2485</p>
+    <p>LinkedIn: Available upon request | GitHub: <a href="https://github.com/TumeloKonaite" target="_blank" rel="noopener noreferrer">github.com/TumeloKonaite</a></p>
+    <p>&copy; 2026 Tshana Tumelo Konaite</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+  </script>
+  <script src="animations.js"></script>
+</body>
+</html>
+
